@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <title>RPS</title>
+</head>
+<body>
+    <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    <header class="jumbotron jumbotron-fluid w-75 mx-auto text-center">
+        <h1>RPS</h1>
+    </header>
+    <div class="container w-75 mx-auto">
+        <div class="row">
+            <div class="col-4 text-center">Player 1</div>
+            <div class="col-4 text-center"></div>
+            <div class="col-4 text-center">Player 2</div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="btn-group-vertical ml-5" role="group">
+                    <button class="btn player1" value="r">
+                        <img src="assets/images/rock.png" class="h-50 w-50 img-fluid img-thumbnail">
+                    </button>
+                    <button class="btn player1" value="p">
+                            <img src="assets/images/paper.png" class="h-50 w-50 img-fluid img-thumbnail">
+                    </button>
+                    <button class="btn player1" value="s">
+                            <img src="assets/images/scissor.png" class="h-50 w-50 img-fluid img-thumbnail">
+                    </button>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="d-table text-center mx-auto">
+                    <p class="mb-5 mt-5" id="result"></p>
+                    <p class="mb-5 mt-5" id="message"></p>
+                </div>
+            </div>
+            <div class="col-4">
+                    <div class="btn-group-vertical ml-5" role="group">
+                            <button class="btn player2" value="r">
+                                <img src="assets/images/rock.png" class="h-50 w-50 img-fluid img-thumbnail">
+                            </button>
+                            <button class="btn player2" value="p">
+                                    <img src="assets/images/paper.png" class="h-50 w-50 img-fluid img-thumbnail">
+                            </button>
+                            <button class="btn player2" value="s">
+                                    <img src="assets/images/scissor.png" class="h-50 w-50 img-fluid img-thumbnail">
+                            </button>
+                        </div>        
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 text-center">
+                <span>Wins: </span><span id="win1"></span>
+            </div>
+            <div class="col-4 text-center"></div>
+            <div class="col-4 text-center">
+                <span>Wins: </span><span id="win2"></span>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-4 text-center">
+                    <span>Ties: </span><span id="tie1"></span>
+                </div>
+                <div class="col-4 text-center"></div>
+                <div class="col-4 text-center">
+                    <span>Ties: </span><span id="tie2"></span>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-4 text-center">
+                    <span>Losses: </span><span id="loss1"></span>
+                </div>
+                <div class="col-4 text-center"></div>
+                <div class="col-4 text-center">
+                    <span>Losses: </span><span id="loss2"></span>
+                </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery JS -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Firebase JS-->
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    <!-- Code to the JavaScript File -->
+    <script src="logic.js"></script>  
+</body>
+</html>
